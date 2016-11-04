@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="?attr/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/iv_GaussianBlurBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/icon_header"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view_GaussianBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.androidstudio.shi.androidnewwidget.DrawerLayout.ShapedImageView
+        android:id="@+id/shapedImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@null"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_header"
+        app:shape_mode="circle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/shapedImageView"
+        android:gravity="center"
+        android:text="软件开发工程师"
+        android:textColor="?attr/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp" />
+
+</RelativeLayout>

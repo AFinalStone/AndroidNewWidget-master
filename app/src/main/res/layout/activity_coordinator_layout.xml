@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--app:backgroundTint - 设置FAB的背景颜色。-->
+    <!--app:rippleColor - 设置FAB点击时的背景颜色。-->
+    <!--app:borderWidth - FAB边缘宽度, 在有的4.1的sdk上FAB会显示为正方形，或在5.0以后的sdk没有阴影效果。可以设置为borderWidth="0dp"解决此问题。-->
+    <!--app:elevation - 默认状态下FAB的阴影大小。-->
+    <!--app:pressedTranslationZ - 点击时候FAB的阴影大小。-->
+    <!--app:fabSize - 设置FAB的大小，该属性有两个值，分别为normal和mini，对应的FAB大小分别为56dp和40dp。-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#00FF00"
+        android:layout_gravity="center"
+        app:rippleColor="#FF0000"
+        app:borderWidth="0dp"
+        app:elevation="3dp"
+        app:pressedTranslationZ="10dp"
+        app:layout_behavior="com.androidstudio.shi.androidnewwidget.CoordinatorLayout.MoveFloatingActionButtonBehavior"
+        android:src="@android:drawable/ic_dialog_alert" />
+
+    <com.androidstudio.shi.androidnewwidget.CoordinatorLayout.MoveFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3366CC"
+        android:tag="10"
+        app:backgroundTint="#FFFF00"
+        app:rippleColor="#FF0000"
+        />
+
+
+<!--    <com.androidstudio.shi.androidnewwidget.CoordinatorLayout.MoveButton
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="移动按钮"
+        android:background="@color/colorAccent"
+        />-->
+
+
+
+</android.support.design.widget.CoordinatorLayout>
