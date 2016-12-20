@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -13,7 +12,9 @@ import android.widget.TextView;
 import com.androidstudio.shi.androidnewwidget.AppBarLayout.AppBarLayoutActivity;
 import com.androidstudio.shi.androidnewwidget.CoordinatorLayout.CoordinatorLayoutActivity;
 import com.androidstudio.shi.androidnewwidget.DrawerLayout.DrawerLayoutActivity;
-import com.androidstudio.shi.androidnewwidget.Toolbar.ToolBarActivity;
+import com.androidstudio.shi.androidnewwidget.StateBar.SystemStateBarColorActivity;
+import com.androidstudio.shi.androidnewwidget.Toolbar.ToolBarActivity_01;
+import com.androidstudio.shi.androidnewwidget.Toolbar.ToolBarActivity_02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
     MyAdapter myAdapter;
     private List<String> listData = new ArrayList<String>();
     private final String Name_CoordinatorLayoutActivity = "CoordinatorLayoutActivity";
-    private final String Name_ToolBarActivity = "ToolBarActivity";
+    private final String Name_ToolBarActivity_01 = "ToolBarActivity_01";
+    private final String Name_ToolBarActivity_02 = "ToolBarActivity_02";
     private final String Name_AppBarLayoutActivity = "AppBarLayoutActivity";
     private final String Name_DrawerLayoutActivity = "DrawerLayoutActivity";
+    private final String Name_SystemStateBarActivity = "SystemStateBarActivity";
 
 
     @Override
@@ -37,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
         listData.add(Name_CoordinatorLayoutActivity);
-        listData.add(Name_ToolBarActivity);
+        listData.add(Name_ToolBarActivity_01);
+        listData.add(Name_ToolBarActivity_02);
         listData.add(Name_AppBarLayoutActivity);
         listData.add(Name_DrawerLayoutActivity);
+        listData.add(Name_SystemStateBarActivity);
         // 设置布局管理器
 
         // 线性布局管理器
@@ -66,8 +71,13 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     return;
                 }
-                if(Name_ToolBarActivity.equals(listData.get(position))){
-                    Intent intent = new Intent(MainActivity.this, ToolBarActivity.class);
+                if(Name_ToolBarActivity_01.equals(listData.get(position))){
+                    Intent intent = new Intent(MainActivity.this, ToolBarActivity_01.class);
+                    startActivity(intent);
+                    return;
+                }
+                if(Name_ToolBarActivity_02.equals(listData.get(position))){
+                    Intent intent = new Intent(MainActivity.this, ToolBarActivity_02.class);
                     startActivity(intent);
                     return;
                 }
@@ -78,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(Name_DrawerLayoutActivity.equals(listData.get(position))){
                     Intent intent = new Intent(MainActivity.this, DrawerLayoutActivity.class);
+                    startActivity(intent);
+                    return;
+                }
+                if(Name_SystemStateBarActivity.equals(listData.get(position))){
+                    Intent intent = new Intent(MainActivity.this, SystemStateBarColorActivity.class);
                     startActivity(intent);
                     return;
                 }

@@ -16,11 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".CoordinatorLayout.CoordinatorLayoutActivity" />
-        <activity android:name=".Toolbar.ToolBarActivity"  android:theme="@style/NoActionbarTheme"/>
-
-
-        <activity android:name=".AppBarLayout.AppBarLayoutActivity" />
-        <activity android:name=".DrawerLayout.DrawerLayoutActivity"></activity>
+        <activity
+            android:name=".Toolbar.ToolBarActivity_01"
+            android:theme="@style/NoActionbarTheme" />
+        <activity
+            android:name=".AppBarLayout.AppBarLayoutActivity"
+            android:theme="@style/NoActionbarTheme" />
+        <activity android:name=".DrawerLayout.DrawerLayoutActivity" />
+        <activity android:name=".StateBar.SystemStateBarColorActivity" />
+        <activity android:name=".Toolbar.ToolBarActivity_02"></activity>
     </application>
 
 </manifest>

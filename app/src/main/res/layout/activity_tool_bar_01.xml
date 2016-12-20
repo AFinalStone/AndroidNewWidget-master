@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.androidstudio.shi.androidnewwidget.Toolbar.ToolBarActivity">
+    tools:context=".Toolbar.ToolBarActivity_01">
 
     <ImageView
         android:layout_width="match_parent"
@@ -15,12 +15,12 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         app:title="界面标题"
         app:subtitle="二级标题"
         app:navigationIcon="@mipmap/ic_menu_back"
         app:logo="@mipmap/logo"
         android:background="?attr/colorPrimary"
-        android:layout_height="?attr/actionBarSize"  />
-
+        android:theme="@style/ToolBarTheme"/>
 
 </RelativeLayout>
