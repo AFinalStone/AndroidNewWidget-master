@@ -1,22 +1,12 @@
 <resources>
 
-    <!-- Base application theme. -->
-<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        &lt;!&ndash; Customize your theme here. &ndash;&gt;
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-    </style>   -->
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="contentInsetStart">0dp</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+<!--        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>-->
     </style>
     <!--设置给ToolbarActivity的风格-->
     <style name="NoActionbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -25,8 +15,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--设置Toobar左侧空白消失-->
         <item name="toolbarStyle">@style/ClubToolbar</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+<!--        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>-->
     </style>
 
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
@@ -50,7 +40,10 @@
         <item name="android:src">@mipmap/ic_menu_setting</item>
     </style>
 
-    <style name="ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+    <!--水波纹按钮效果-->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorPrimary</item>//按钮默认颜色
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>//按钮按下的水波纹改变颜色
     </style>
 
 </resources>

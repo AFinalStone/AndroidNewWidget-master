@@ -20,11 +20,13 @@
             android:name=".Toolbar.ToolBarActivity_01"
             android:theme="@style/NoActionbarTheme" />
         <activity
+            android:name=".Toolbar.ToolBarActivity_02"
+            android:theme="@style/NoActionbarTheme" />
+        <activity
             android:name=".AppBarLayout.AppBarLayoutActivity"
             android:theme="@style/NoActionbarTheme" />
         <activity android:name=".DrawerLayout.DrawerLayoutActivity" />
         <activity android:name=".StateBar.SystemStateBarColorActivity" />
-        <activity android:name=".Toolbar.ToolBarActivity_02"></activity>
     </application>
 
 </manifest>
