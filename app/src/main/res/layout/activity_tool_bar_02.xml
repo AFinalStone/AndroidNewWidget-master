@@ -52,4 +52,14 @@
             android:src="@mipmap/ic_menu_setting" />
     </android.support.v7.widget.Toolbar>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@id/toolbar"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackground"
+        android:theme="@style/AppTheme.Button"
+        android:src="@mipmap/ic_menu_back" />
 </RelativeLayout>
